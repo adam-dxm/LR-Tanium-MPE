@@ -1,0 +1,526 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.7.0.0</ExportConsoleVersion>
+    <KBVersion>7.1.596.0</KBVersion>
+    <DateExported>2021-04-29T02:03:14.0582629+01:00</DateExported>
+    <ExportLicense>646</ExportLicense>
+    <ExportUser>MAIDO\adm_adamt</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000244</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>TaniumAuditSource Logs LEEF 2</Name>
+    <FullName>TaniumAuditSource Logs LEEF 2</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.69+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000245</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1032195</CommonEventID>
+    <CommonEventName>User Validated</CommonEventName>
+    <MsgClassID>1140</MsgClassID>
+    <Name>LDAP Sync User Update</Name>
+    <FullName>LDAP Sync User Update</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>*</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>=updated-user-from-LdapSync</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.693+01:00</DateUpdated>
+    <SortOrder>3</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>2</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>2</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000246</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1030936</CommonEventID>
+    <CommonEventName>User Logon Failure : Bad Username</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>Incorrect-User-User-does-not-exist</Name>
+    <FullName>Incorrect-User-User-does-not-exist</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>1</DefForwarding>
+    <DefForwardingBool>true</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>*</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>=Incorrect-User-User-does-not-exist</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.693+01:00</DateUpdated>
+    <SortOrder>4</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000247</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1032132</CommonEventID>
+    <CommonEventName>User Logon Failure</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>Login Failure</Name>
+    <FullName>Login Failure</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>1</DefForwarding>
+    <DefForwardingBool>true</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=FailedCreateObject</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.693+01:00</DateUpdated>
+    <SortOrder>5</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000248</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1030645</CommonEventID>
+    <CommonEventName>User Logon</CommonEventName>
+    <MsgClassID>1020</MsgClassID>
+    <Name>User Login</Name>
+    <FullName>User Login</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=CreateObject</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.697+01:00</DateUpdated>
+    <SortOrder>2</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000251</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1032790</CommonEventID>
+    <CommonEventName>Service Logon</CommonEventName>
+    <MsgClassID>1020</MsgClassID>
+    <Name>Login Via SOAPPluginScheduler</Name>
+    <FullName>Login Via SOAPPluginScheduler</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=CreateObject</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>=-Originated-from-SOAPPluginScheduler</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.7+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000241</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>3</RuleStatus>
+    <StatusName>Development</StatusName>
+    <CommonEventID>1014813</CommonEventID>
+    <CommonEventName>Session Closed For User</CommonEventName>
+    <MsgClassID>1140</MsgClassID>
+    <Name>User Failed To Log Out</Name>
+    <FullName>User Failed To Log Out</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>*</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.697+01:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>2</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>2</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000242</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>3</RuleStatus>
+    <StatusName>Development</StatusName>
+    <CommonEventID>1032366</CommonEventID>
+    <CommonEventName>Begin Session</CommonEventName>
+    <MsgClassID>1140</MsgClassID>
+    <Name>New Session Created</Name>
+    <FullName>New Session Created</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>*</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.7+01:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>2</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>2</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000243</MPERuleID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RuleStatus>3</RuleStatus>
+    <StatusName>Development</StatusName>
+    <CommonEventID>1032132</CommonEventID>
+    <CommonEventName>User Logon Failure</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>Authentication Failed</Name>
+    <FullName>Authentication Failed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>1</DefForwarding>
+    <DefForwardingBool>true</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>*</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.7+01:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>2</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>2</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSIP>*</MapSIP>
+    <MapDName>*</MapDName>
+    <MapLogin>*</MapLogin>
+    <MapAccount>*</MapAccount>
+    <MapGroup>*</MapGroup>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <RegexTagged>(?=\s\S+\sLEEF:)\s(?&lt;dname&gt;\S+)\sLEEF:[^\|]+\|Tanium\|Tanium Application Server\|\d*\|(?&lt;vendorinfo&gt;TaniumAuditSource)\|[^\|]*\|auditrowid=\d+\tcreationtime=[^\t]+\tdetails=(?&lt;tag3&gt;(?&lt;action&gt;updated-user-from-LdapSync))?((?&lt;tag3&gt;Incorrect-User-User-does-not-exist):-((?&lt;domainorigin&gt;[^\\]+)\\)?(?&lt;login&gt;[^\;]+)\;-IP-Address:-&lt;sip&gt;)?(User:-(?&lt;login&gt;[^\;\@]+)(\@(?&lt;domainorigin&gt;[^\;]+)?)?\;-Session-ID:-(?&lt;session&gt;[^\;]+)\;-Authentication-Type:-(?&lt;sessiontype&gt;[^\;]+)\;(-New-persona-session,-user-group-id:-(?&lt;group&gt;\d+))?(?&lt;tag4&gt;(-Originated-from-SOAPPluginScheduler))?)?(-IP-Address:-&lt;sip&gt;)?\t*[^\}]+\}\tmodpersona=((null)|(?&lt;account&gt;[^\t]+))\tmodificationtime=[^\t]*\tmodifieruserid=[^\t]*\tobjectid=(?&lt;object&gt;[^\t]*)\ttype=(?&lt;tag1&gt;(?&lt;action&gt;[^\t]*))\taudittype=(?&lt;tag2&gt;\S+)</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:38:07.69+01:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <MPERuleRegexID>1000000064</MPERuleRegexID>
+    <SortOrder>5</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>1014813</CommonEventID>
+    <MsgClassID>1140</MsgClassID>
+    <Name>Session Closed For User</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1019753</CommonEventID>
+    <MsgClassID>1999</MsgClassID>
+    <Name>General Audit Message</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030645</CommonEventID>
+    <MsgClassID>1020</MsgClassID>
+    <Name>User Logon</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030936</CommonEventID>
+    <MsgClassID>1040</MsgClassID>
+    <Name>User Logon Failure : Bad Username</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1032132</CommonEventID>
+    <MsgClassID>1040</MsgClassID>
+    <Name>User Logon Failure</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1032195</CommonEventID>
+    <MsgClassID>1140</MsgClassID>
+    <Name>User Validated</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1032366</CommonEventID>
+    <MsgClassID>1140</MsgClassID>
+    <Name>Begin Session</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1032790</CommonEventID>
+    <MsgClassID>1020</MsgClassID>
+    <Name>Service Logon</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <Name>Syslog - Tanium</Name>
+    <FullName>Syslog - Tanium</FullName>
+    <Abbreviation>NewSyslogTanium</Abbreviation>
+    <ShortDesc>Syslog - Tanium</ShortDesc>
+    <LongDesc>Syslog - Tanium</LongDesc>
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2021-04-27T16:19:29.197+01:00</DateUpdated>
+    <MsgSourceFormat>1</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+  <Service>
+    <ServiceID>8608</ServiceID>
+    <Name>tanium</Name>
+    <ShortDesc>This plugin classifies Tanium Client traffic. Tanium is an Endpoint Detection and Response (EDR) solution. It is Endpoint Management System to protect entreprise against cyber threats.</ShortDesc>
+    <DateUpdated>2020-10-22T18:48:37.583+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </Service>
+</RuleDataset>

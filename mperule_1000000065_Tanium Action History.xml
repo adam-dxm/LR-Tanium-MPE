@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.7.0.0</ExportConsoleVersion>
+    <KBVersion>7.1.596.0</KBVersion>
+    <DateExported>2021-04-29T02:03:26.9159036+01:00</DateExported>
+    <ExportLicense>646</ExportLicense>
+    <ExportUser>MAIDO\adm_adamt</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000249</MPERuleID>
+    <MPERuleRegexID>1000000065</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1026747</CommonEventID>
+    <CommonEventName>Action Performed By Admin</CommonEventName>
+    <MsgClassID>1140</MsgClassID>
+    <Name>Tanium Action History</Name>
+    <FullName>Tanium Action History</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:33:33.977+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000250</MPERuleID>
+    <MPERuleRegexID>1000000065</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1034138</CommonEventID>
+    <CommonEventName>Policy Enabled : System</CommonEventName>
+    <MsgClassID>1500</MsgClassID>
+    <Name>Endpoint</Name>
+    <FullName>Endpoint</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>2</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>*</MapTag1>
+    <MapTag2>=Endpoint</MapTag2>
+    <MapTag3>*</MapTag3>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:33:33.98+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapProcess>*</MapProcess>
+    <MapObject>*</MapObject>
+    <MapRecipient>*</MapRecipient>
+    <MapSubject>*</MapSubject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000065</MPERuleRegexID>
+    <RegexTagged>(?=\s\S+\s+LEEF:)\s(?&lt;sname&gt;\S+)\s+LEEF:[^\|]+\|Tanium\|Tanium Application Server\|\d\|(?&lt;vendorinfo&gt;ActionHistory)\|[^\|]*\|ActionID=(?&lt;processid&gt;(?&lt;object&gt;\d+))\t(ActionName=(?&lt;tag1&gt;(?&lt;action&gt;((tanium-)?(?&lt;tag2&gt;(?&lt;process&gt;[^\-]+))\-)?[^\t]*)))\tApprover=(?&lt;recipient&gt;[^\t]*)\tPackageName=(?&lt;objectname&gt;[^\t]*)\tComment=(?&lt;subject&gt;[^\t]*)\tStatus=(?&lt;tag3&gt;(?&lt;status&gt;[^\t]*))\tIssuer=(?&lt;login&gt;[^\t]*)\tsourceID=\d*\tStartTime=[^\t]*\tExpiration=[^\t]*\tInsertTime=[^\t]*\tCommand=(?&lt;command&gt;[^\t]*)</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T16:33:33.977+01:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <MPERuleRegexID>1000000065</MPERuleRegexID>
+    <SortOrder>6</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>1026747</CommonEventID>
+    <MsgClassID>1140</MsgClassID>
+    <Name>Action Performed By Admin</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1034138</CommonEventID>
+    <MsgClassID>1500</MsgClassID>
+    <Name>Policy Enabled : System</Name>
+    <ShortDesc />
+    <DefRiskRating>2</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <Name>Syslog - Tanium</Name>
+    <FullName>Syslog - Tanium</FullName>
+    <Abbreviation>NewSyslogTanium</Abbreviation>
+    <ShortDesc>Syslog - Tanium</ShortDesc>
+    <LongDesc>Syslog - Tanium</LongDesc>
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2021-04-27T16:19:29.197+01:00</DateUpdated>
+    <MsgSourceFormat>1</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+  <Service>
+    <ServiceID>8608</ServiceID>
+    <Name>tanium</Name>
+    <ShortDesc>This plugin classifies Tanium Client traffic. Tanium is an Endpoint Detection and Response (EDR) solution. It is Endpoint Management System to protect entreprise against cyber threats.</ShortDesc>
+    <DateUpdated>2020-10-22T18:48:37.583+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </Service>
+</RuleDataset>

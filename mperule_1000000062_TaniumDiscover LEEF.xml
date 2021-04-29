@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.7.0.0</ExportConsoleVersion>
+    <KBVersion>7.1.596.0</KBVersion>
+    <DateExported>2021-04-29T02:02:13.3087382+01:00</DateExported>
+    <ExportLicense>646</ExportLicense>
+    <ExportUser>MAIDO\adm_adamt</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000237</MPERuleID>
+    <MPERuleRegexID>1000000062</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1029792</CommonEventID>
+    <CommonEventName>Inventory Collection Service Message</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>TaniumDiscover LEEF</Name>
+    <FullName>TaniumDiscover LEEF</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T15:14:59.1+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000062</MPERuleRegexID>
+    <RegexTagged>(?=\S+\sLEEF:)(?&lt;sname&gt;\S+)\sLEEF:[^\|]+\|Tanium\|Tanium Application Server\|\d+\|(?&lt;vendorinfo&gt;TaniumDiscover)\|\t\|id=(?&lt;object&gt;\d+)\t(MacAddress=((null)|&lt;dmac&gt;)\tMacOrganization=[^\t]*\t)?(IpAddress=&lt;dip&gt;\t)?(NatIpAddress=&lt;dnatip&gt;?\t)?(Hostname=(?&lt;dname&gt;\S*)\t)?(Labels=(?&lt;subject&gt;[^\t]*)\t)?(Locations=[^\t]*\t)?(TaniumComputerId=\d*\t)?(Ports=[^\t]*\t)?(Os=((null)|(?&lt;objecttype&gt;[^\t]*))\t)?(OsGeneration=((null)|(?&lt;version&gt;[^\t]*))\t)?</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-28T15:14:59.1+01:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <MPERuleRegexID>1000000062</MPERuleRegexID>
+    <SortOrder>3</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>1029792</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Inventory Collection Service Message</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <Name>Syslog - Tanium</Name>
+    <FullName>Syslog - Tanium</FullName>
+    <Abbreviation>NewSyslogTanium</Abbreviation>
+    <ShortDesc>Syslog - Tanium</ShortDesc>
+    <LongDesc>Syslog - Tanium</LongDesc>
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2021-04-27T16:19:29.197+01:00</DateUpdated>
+    <MsgSourceFormat>1</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+</RuleDataset>

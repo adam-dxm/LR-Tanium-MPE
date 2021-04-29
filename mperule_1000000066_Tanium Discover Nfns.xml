@@ -1,0 +1,90 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.7.0.0</ExportConsoleVersion>
+    <KBVersion>7.1.596.0</KBVersion>
+    <DateExported>2021-04-29T02:03:44.4928121+01:00</DateExported>
+    <ExportLicense>646</ExportLicense>
+    <ExportUser>MAIDO\adm_adamt</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000252</MPERuleID>
+    <MPERuleRegexID>1000000066</MPERuleRegexID>
+    <RuleStatus>2</RuleStatus>
+    <StatusName>Test</StatusName>
+    <CommonEventID>1030311</CommonEventID>
+    <CommonEventName>New Device Found</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Tanium Discover Nfns</Name>
+    <FullName>Tanium Discover Nfns</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>1</DefForwarding>
+    <DefForwardingBool>true</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-29T00:51:26.023+01:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>2</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>8608</ServiceIs>
+    <HostContext>0</HostContext>
+    <ServiceName>tanium</ServiceName>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000066</MPERuleRegexID>
+    <RegexTagged>(?=Discover Notifications/)(?&lt;vendorinfo&gt;Discover Notifications)/(?&lt;subject&gt;(?&lt;object&gt;[^\|]+))\|[^\|]*\|((undefined)|&lt;dmac&gt;)?\|((undefined)|&lt;dip&gt;)?\|[^\|]*\|[^\|]*\|((undefined)|(?&lt;objecttype&gt;[^\|]*))\|</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2021-04-29T00:51:26.023+01:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <MPERuleRegexID>1000000066</MPERuleRegexID>
+    <SortOrder>7</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>1030311</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>New Device Found</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2020-10-22T18:48:35.987+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000674</MsgSourceTypeID>
+    <Name>Syslog - Tanium</Name>
+    <FullName>Syslog - Tanium</FullName>
+    <Abbreviation>NewSyslogTanium</Abbreviation>
+    <ShortDesc>Syslog - Tanium</ShortDesc>
+    <LongDesc>Syslog - Tanium</LongDesc>
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2021-04-27T16:19:29.197+01:00</DateUpdated>
+    <MsgSourceFormat>1</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+  <Service>
+    <ServiceID>8608</ServiceID>
+    <Name>tanium</Name>
+    <ShortDesc>This plugin classifies Tanium Client traffic. Tanium is an Endpoint Detection and Response (EDR) solution. It is Endpoint Management System to protect entreprise against cyber threats.</ShortDesc>
+    <DateUpdated>2020-10-22T18:48:37.583+01:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </Service>
+</RuleDataset>
